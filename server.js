@@ -31,6 +31,22 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
+app.get('/gerenciar-cartao', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', '/gerenciar-cartao.html'));
+});
+
+app.get('/cadastrar-cliente', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', '/cadastrar-cliente.html'));
+})
+
+app.get('/cadastrar-promocao', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', '/cadastrar-promocao.html'));
+})
+
+app.get('/log-sistema', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', '/log-sistema.html'));
+})
+
 app.post('/api/clientes', (req, res) => {
     const { nome, telefone, email } = req.body;
     if (!nome || !telefone) {

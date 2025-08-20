@@ -3,7 +3,7 @@ body {
     color: #333;
     margin: 0;
     padding: 20px;
-    background-image: url('img1.jpeg');
+    background-image: url('../images/img1.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -36,8 +36,14 @@ body::before {
     border: 1px solid #ddd;
     border-radius: 8px;
 }
-h1 { color: #d0d7df; text-align: center; }
-h2 { color: #e4e7ea; border-bottom: 2px solid #3498db; padding-bottom: 5px; }
+h1 { 
+    color: #d0d7df; 
+    text-align: center; 
+}
+h2 { 
+    color: #e4e7ea; 
+    /* border-bottom: 2px solid #3498db;  */
+    padding-bottom: 5px; }
 input {
     width: calc(100% - 22px);
     padding: 10px;
@@ -56,26 +62,90 @@ button {
 }
 .botoes-cadastro {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    text-align: center;
     gap: 10px;
 }
-#btn-cadastrar { background-color: #28a745; flex-grow: 1; }
-#btn-limpar-campos { background-color: #f0ad4e; }
-#btn-buscar-nome { background-color: #17a2b8; }
-#btn-nova-busca { background-color: #6c757d; }
-.botoes-acao { margin-top: 15px; display: flex; gap: 10px; flex-wrap: wrap; }
-#btn-registrar { background-color: #007bff; }
-#btn-resgatar { background-color: #ffc107; color: #333; }
-#btn-editar { background-color: #6c757d; }
-#btn-excluir { background-color: #dc3545; }
-#btn-mostrar-todos { background-color: #3498db; }
-button:hover:not(:disabled) { opacity: 0.8; }
-button:disabled { background-color: #ccc; cursor: not-allowed; }
-.feedback { padding: 15px; margin-top: 10px; border-radius: 5px; }
-.sucesso { background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
-.erro { background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
-.info { background-color: #e2e3e5; color: #383d41; border: 1px solid #d6d8db; }
-.busca-por-nome { display: flex; gap: 10px; margin-bottom: 10px; align-items: center; flex-wrap: wrap; }
-.busca-por-nome input { margin-bottom: 0; }
+#btn-cadastrar {
+    background-color: #28a745; 
+    padding: 10px;
+    border: 1px solid #28a745;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    flex-grow: 1; 
+}
+#btn-limpar-campos { 
+    background-color: #f0ad4e; 
+}
+#btn-buscar-nome { 
+    background-color: #17a2b8; 
+}
+#btn-nova-busca { 
+    background-color: #6c757d; 
+}
+.botoes-acao { 
+    margin-top: 15px; 
+    display: flex; 
+    gap: 10px; 
+    flex-wrap: wrap; 
+}
+#btn-registrar { 
+    background-color: #007bff; 
+}
+#btn-resgatar { 
+    background-color: #ffc107; 
+    color: #333; 
+}
+#btn-editar { 
+    background-color: #6c757d; 
+}
+#btn-excluir { 
+    background-color: #dc3545; 
+}
+#btn-mostrar-todos { 
+    background-color: #3498db; 
+}
+button:hover:not(:disabled) { 
+    opacity: 0.8; 
+}
+button:disabled { 
+    background-color: #ccc; 
+    cursor: not-allowed; 
+}
+.feedback { 
+    padding: 15px; 
+    margin-top: 10px; 
+    border-radius: 5px; 
+}
+.sucesso { 
+    background-color: #d4edda; 
+    color: #155724; 
+    border: 1px solid #c3e6cb; 
+}
+.erro { 
+    background-color: #f8d7da; 
+    color: #721c24; 
+    border: 1px solid #f5c6cb; 
+}
+.info { 
+    background-color: #e2e3e5; 
+    color: #383d41; 
+    border: 1px solid #d6d8db; 
+}
+.busca-por-nome { 
+    display: flex; 
+    gap: 10px; 
+    margin-bottom: 10px; 
+    align-items: center; 
+    flex-wrap: wrap; 
+}
+.busca-por-nome input { 
+    margin-bottom: 0; 
+}
 #log-sistema {
     max-height: 300px;
     overflow-y: auto;
